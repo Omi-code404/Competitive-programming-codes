@@ -1,0 +1,45 @@
+## Problem: 1030A - In Search of an Easy Problem
+
+Problem Statement:  
+You need to check if any person in a group thinks the problem is hard (marked as 1).
+If everyone thinks it's easy (all `0`s), output EASY, otherwise output HARD.
+
+*Approach*:  
+1. Simple Check:  
+   - Read the number of people n.  
+   - Read their responses.  
+   - If any response is 1, immediately conclude it's HARD.  
+   - If all are 0, output EASY.  
+2. Time Complexity: O(n) (since we check each input once).  
+3. Space Complexity: O(1) (no extra space needed beyond input storage).  
+
+---
+
+### Solution Code
+#include <stdio.h>
+
+int main() {
+    int n, response;
+    scanf("%d", &n);
+    
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &response);
+        if (response == 1) {
+            printf("HARD\n");
+            return 0;  // Early exit if any '1' is found
+        }
+    }
+    
+    printf("EASY\n");
+    return 0;
+}
+
+Input Example:
+
+3
+0 0 1
+
+
+Output Example:
+
+HARD
