@@ -6,6 +6,9 @@ A collection of my solved Codeforces problems in C . Includes solutions with que
 -**Problem**[A. In Search of an Easy Problem] (https://codeforces.com/contest/1030/problem/A)
 -**Solution**[A. In Search of an Easy Problem.c] (https://github.com/Omi-code404/Competitive-programming-codes/blob/main/Day01/Day02_A.In%20Search%20of%20an%20Easy%20problem.c) 
 -**Approach:** Array mapping(Time :0(n))
+## Day 02
+-**Problem**[A. Sum of Round Numbers] (https://codeforces.com/problemset/problem/1352/A)
+-**Solution**[
 🛠**How to Run**
 Clone the repository:
 
