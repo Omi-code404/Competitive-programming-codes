@@ -1,0 +1,53 @@
+
+## Problem
+Given three integers \(a\), \(b\), \(c\), determine if they form a *stair* (\(a < b < c\)), *peak* (\(a < b > c\)), or *neither*. Handle multiple test cases.
+
+*Constraints*: \(1 \leq t \leq 1000\), \(1 \leq a, b, c \leq 10^9\).
+
+## Approach
+- Read \(t\) test cases.
+- For each case, read \(a\), \(b\), \(c\).
+- Check:
+  - *Stair*: \(a < b < c\).
+  - *Peak*: \(a < b > c\).
+  - Else: *Neither*.
+- Use appropriate data types for large integers.
+
+## Code
+cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
+    int t;
+    cin >> t;
+    while (t--) {
+        long long a, b, c;
+        cin >> a >> b >> c;
+        cout << (a < b && b < c ? "STAIR" : a < b && b > c ? "PEAK" : "NONE") << endl;
+    }
+    return 0;
+}
+
+*Input*:
+
+4
+1 2 3
+2 5 4
+6 4 4
+1 2 1
+
+
+*Output*:
+
+STAIR
+PEAK
+NONE
+NONE
+
+
+## Notes
+- Output is case-sensitive ("STAIR", "PEAK", "NONE").
