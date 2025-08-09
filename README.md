@@ -11,7 +11,9 @@ A collection of my solved Codeforces problems in C . Includes solutions with que
 ## Day 03
 -**Problem**[1950A - Stair, Peak, or Neither](https://codeforces.com/problemset/problem/1950/A)
 -**Solution**[1950A - Stair, Peak, or Neither.c](https://github.com/Omi-code404/Competitive-programming-codes/blob/main/Day03/1950A%20-%20Stair%2C%20Peak%2C%20or%20Neither.c)
-
+## Day 04
+-**Problem** [520A - Pangram](https://codeforces.com/problemset/problem/520/A)
+-**Solution**[520A - Pangram.c](https://github.com/Omi-code404/Competitive-programming-codes/blob/main/Day04/520A%20-%20Pangram.c)
 🛠**How to Run**
 Clone the repository:
 
