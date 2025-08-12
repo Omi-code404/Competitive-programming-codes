@@ -16,7 +16,9 @@ A collection of my solved Codeforces problems in C . Includes solutions with que
 -**Solution**[520A - Pangram.c](https://github.com/Omi-code404/Competitive-programming-codes/blob/main/Day04/520A%20-%20Pangram.c)
 ## Day 05
 -**Problem** [144A–Arrival of the General](https://codeforces.com/contest/144/problem/A)
--**Solution**[144A–Arrival of the General.c]()
+-**Solution**[144A–Arrival of the General.c](https://github.com/Omi-code404/Competitive-programming-codes/blob/main/Day05/144A-Arrival%20of%20the%20General.c)
+
+
 🛠**How to Run**
 Clone the repository:
 
