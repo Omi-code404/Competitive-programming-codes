@@ -19,7 +19,7 @@ A collection of my solved Codeforces problems in C . Includes solutions with que
 -**Solution**[144A–Arrival of the General.c](https://github.com/Omi-code404/Competitive-programming-codes/blob/main/Day05/144A-Arrival%20of%20the%20General.c)
 ## Day 06
 -**Problem**[1560A - Dislike of Threes](https://codeforces.com/problemset/problem/1560/A)
--**Solution**[1560A - Dislike of Threes.c]()
+-**Solution**[1560A - Dislike of Threes.c](https://github.com/Omi-code404/Competitive-programming-codes/blob/main/Day06/1560A%20-%20Dislike%20of%20Threes.c)
 
 🛠**How to Run**
 Clone the repository:
