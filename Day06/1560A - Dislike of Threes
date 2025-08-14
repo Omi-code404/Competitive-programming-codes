@@ -1,0 +1,55 @@
+# Problem: Dislike of Threes  
+**Link**: [Codeforces 1560A](https://codeforces.com/problemset/problem/1560/A)  
+
+## Approach  
+1. **Generate Valid Numbers**:  
+   - Iterate through numbers starting from 1.  
+   - Skip numbers divisible by 3 or ending with 3.  
+   - Store the valid numbers in a list.  
+
+2. **Answer Queries**:  
+   - For each query (k), return the k-th valid number from the precomputed list.  
+
+## Solution Code 
+C code ...... 
+#include <stdio.h>
+
+int main() {
+    int t, k;
+    scanf("%d", &t);
+    while (t--) {  // t=3 → t=2 → t=1 → t=0 (স্টপ)
+        scanf("%d", &k);
+        int num = 0;
+        while (k > 0) {
+            num++;
+            if (num % 3 == 0 || num % 10 == 3) continue;
+            k--;
+        }
+        printf("%d\n", num);
+    }
+return 0;
+}
+
+## Input  
+```
+5
+1
+2
+3
+4
+5
+```
+
+## Output  
+```
+1
+2
+4
+5
+7
+```  
+
+### Explanation  
+- The valid numbers are `[1, 2, 4, 5, 7, 8, 10, 11, 14, ...]`.  
+- For `k = 3`, the 3rd valid number is `4`.  
+- For `k = 5`, the 5th valid number is `7`.  
