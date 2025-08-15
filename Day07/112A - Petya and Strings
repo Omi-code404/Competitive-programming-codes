@@ -1,0 +1,59 @@
+Problem Summary: Compare two strings lexicographically, ignoring case (uppercase and lowercase letters are equivalent). Output:
+
+-1 if the first string is less than the second.
+1 if the second string is less than the first.
+0 if the strings are equal.
+
+Approach:
+
+Read two strings from input.
+Convert both strings to lowercase to ignore case sensitivity.
+Compare the strings lexicographically:
+
+If the first string is less, output -1.
+If the second string is less, output 1.
+If equal, output 0.
+
+Solution in C :
+#include <stdio.h>
+#include <ctype.h> 
+#include <string.h>
+
+int main() {
+    char s1[101], s2[101];
+    scanf("%s %s", s1, s2);
+    
+    for(int i = 0; i < strlen(s1); i++) {
+        char c1 = tolower(s1[i]);
+        char c2 = tolower(s2[i]);
+        
+        if(c1 < c2) {
+            printf("-1");
+            return 0;
+        }
+        if(c1 > c2) {
+            printf("1");
+            return 0;
+        }
+    }
+    
+    printf("0");
+    return 0;
+}
+Input:
+Two strings on separate lines, each containing 1 to 100 Latin letters (uppercase or lowercase).
+
+aaaa
+aaaA
+
+abs
+Abz
+
+abcdefg
+AbCdEfF
+
+Output:
+0
+-1
+1
+
