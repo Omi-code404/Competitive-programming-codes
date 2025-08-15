@@ -21,6 +21,10 @@ A collection of my solved Codeforces problems in C . Includes solutions with que
 -**Problem**[1560A - Dislike of Threes](https://codeforces.com/problemset/problem/1560/A)
 -**Solution**[1560A - Dislike of Threes.c](https://github.com/Omi-code404/Competitive-programming-codes/blob/main/Day06/1560A%20-%20Dislike%20of%20Threes.c)
 
+## Day 07
+-**Problem**[112A - Petya and Strings](https://codeforces.com/problemset/problem/112/A)
+-**Solution**[112A - Petya and Strings]()
+
 🛠**How to Run**
 Clone the repository:
 
