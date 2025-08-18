@@ -1,0 +1,133 @@
+🚀 Solution for Codeforces 1791A - Codeforces Checking
+This is a solution guide for Codeforces Problem 1791A - Codeforces Checking, a beginner-friendly challenge that tests your ability to check if a given letter exists in the string "codeforces". 🎯 Designed for those new to competitive programming, this README provides a clear explanation, a simple C code solution, and tips to help you learn and grow. Let’s dive in! 🌈
+
+🧩 Problem Overview
+Task: For a given lowercase Latin letter, determine if it appears in the string "codeforces". Output "YES" if it does, "NO" if it doesn’t, for multiple test cases. The output is case-insensitive.
+Constraints
+
+Test cases: ( 1 \leq t \leq 26 )
+Input: A single lowercase letter (a-z) per test case
+Time limit: 1 second
+Memory limit: 256 MB
+
+
+🛠️ Solution Strategy
+To solve this problem, we need to check if an input character is one of the letters in "codeforces" (c, o, d, e, f, o, r, c, e, s). Here’s the approach:
+
+Input Reading:
+
+Read the number of test cases ( t ).
+For each test case, read a single lowercase letter.
+
+
+Character Check:
+
+Directly compare the input letter against each character in "codeforces" using logical OR (||) conditions.
+If the letter matches any of {c, o, d, e, f, r, s}, it’s present.
+
+
+Output:
+
+Print "YES" if the letter is found, "NO" otherwise.
+
+
+Why This Strategy?
+
+Easy to Understand: The code uses basic if conditions, which are perfect for beginners learning C.
+Fast: Comparing a character against a fixed set is constant time (O(1)) per test case.
+No Complex Tools: Avoids loops or advanced functions, keeping the logic simple.
+Alternative Option: The strchr function from <string.h> could make the code shorter by searching the string "codeforces" directly. However, it involves pointers, which might be confusing for new programmers. The chosen approach prioritizes clarity to make your Codeforces learning journey smoother. 🌟
+
+
+💻 C Code Solution
+Below is a straightforward C program that solves the problem:
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    int t;
+    scanf("%d", &t); // Read number of test cases
+    while (t--) {    // Repeat for each test case
+        char c;
+        scanf(" %c", &c); // Read a single character
+        if (c == 'c' || c == 'o' || c == 'd' || c == 'e' || 
+            c == 'f' || c == 'o' || c == 'r' || c == 'c' || 
+            c == 'e' || c == 's') {
+            printf("YES\n");
+        } else {
+            printf("NO\n");
+        }
+    }
+    return 0;
+}
+
+Code Breakdown
+
+Headers:
+<stdio.h>: Enables scanf for input and printf for output.
+<string.h>: Included but unused here (could be used for strchr in a more advanced version).
+
+
+Input:
+scanf("%d", &t): Reads the number of test cases.
+scanf(" %c", &c): Reads a single character, with a space before %c to skip whitespace (like newlines).
+
+
+Logic: The if statement checks if the input character matches any letter in "codeforces" using ||. Note that 'c' and 'e' appear twice, but we only need to check presence.
+Output: Prints "YES" for a match, "NO" otherwise.
+Why Beginner-Friendly?: Uses simple conditionals, avoids loops or pointers, and is easy to follow for those new to C.
+
+Shorter Alternative with strchr:You could simplify the code using strchr:
+if (strchr("codeforces", c)) printf("YES\n");
+else printf("NO\n");
+
+This checks if the character exists in "codeforces" in one line, but it requires understanding C-style strings and pointers. For beginners, the provided code is clearer and more approachable, making it ideal for learning. 📚
+
+📥 Input and Output
+Input Format
+
+First line: An integer ( t ) (1 ≤ ( t ) ≤ 26), the number of test cases.
+Next ( t ) lines: A single lowercase letter (a-z).
+
+Output Format
+
+For each test case, print "YES" if the letter is in "codeforces", "NO" if not, on a new line.
+Case-insensitive output (e.g., "YES", "yes", or "yEs" are all valid).
+
+Sample
+Input:
+10
+a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+
+Output:
+NO
+NO
+YES
+YES
+YES
+YES
+NO
+NO
+NO
+NO
+
+Explanation
+
+"codeforces" contains: {c, o, d, e, f, o, r, c, e, s}.
+a, b, g, h, i, j: Not in "codeforces" → NO
+c, d, e, f: In "codeforces" → YES
+
+
+⚡ Performance Analysis
+
+Time Complexity: ( O(t) ), where ( t ) is the number of test cases. Each test case performs a fixed number of comparisons (O(1)).
+Space Complexity: ( O(1) ), using only a few variables and no extra storage.
