@@ -26,7 +26,8 @@ A collection of my solved Codeforces problems in C . Includes solutions with que
 -**Solution**[112A - Petya and Strings.c](https://github.com/Omi-code404/Competitive-programming-codes/blob/main/Day07/112A%20-%20Petya%20and%20Strings.c)
 ## Day 08
 -**Problem**[1791A - Codeforces Checking](https://codeforces.com/problemset/problem/1791/A)
--**Solution**[1791A - Codeforces Checking.c]()
+-**Solution**[1791A - Codeforces Checking.c](https://github.com/Omi-code404/Competitive-programming-codes/blob/main/Day08/1791A%20-%20Codeforces%20Checking.c)
+
 🛠**How to Run**
 Clone the repository:
 
