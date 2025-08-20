@@ -29,7 +29,8 @@ A collection of my solved Codeforces problems in C . Includes solutions with que
 -**Solution**[1791A - Codeforces Checking.c](https://github.com/Omi-code404/Competitive-programming-codes/blob/main/Day08/1791A%20-%20Codeforces%20Checking.c)
 ## Day 09
 -**Problem**[617A - Elephant](https://codeforces.com/problemset/problem/617/A)
--**Solution**[617A - Elephant.c]()
+-**Solution**[617A - Elephant.c](https://github.com/Omi-code404/Competitive-programming-codes/blob/main/Day09/617A%20-%20Elephant.c)
+
 🛠**How to Run**
 Clone the repository:
 
