@@ -1,0 +1,33 @@
+# 🐘 Codeforces 617A - Elephant
+
+Hey there, coder! Welcome to my solution for the [Codeforces 617A Elephant problem](https://codeforces.com/problemset/problem/617/A). This one’s all about helping an elephant 🐘 stroll from 0 to \( x \) in the fewest steps possible, with step sizes of 1, 2, 3, 4, or 5. Let’s make it quick and fun!
+
+## How It Works
+The elephant’s got a simple strategy: take big steps (size 5) whenever possible! Here’s the breakdown:
+- Divide the distance \( x \) by 5 to see how many full steps we can take.
+- Got a little distance left? No worries—one extra step covers it (since the remainder is at most 4).
+- We use \( (x + 4) / 5 \) to calculate the ceiling of \( x / 5 \), giving us the minimum steps.
+
+## The Code
+```c
+#include <stdio.h>
+
+int main() {
+    int x;
+    scanf("%d", &x);
+    int steps = (x + 4) / 5; // Ceiling of x/5
+    printf("%d\n", steps);
+    return 0;
+}
+input:
+10
+Output:
+2
+Input:
+7
+Output:
+2
+What’s going on?
+
+( x = 10 ): Two steps of 5 (5 + 5 = 10). Done!
+( x = 7 ): One step of 5, one step of 2 (5 + 2 = 7). Easy peasy!
